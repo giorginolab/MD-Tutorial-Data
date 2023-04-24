@@ -1,0 +1,20 @@
+mol new D187N+Nb-run.pdb
+animate delete all
+mol addfile  D187N+Nb-run-subset.xtc waitfor  all
+pbc wrap -center bb -centersel "protein and chain D" -all -compound fragment
+
+mol new D187N-run.pdb
+animate delete all
+mol addfile D187N-run-subset.xtc waitfor  all
+pbc wrap -center bb -centersel "protein and chain D" -all -compound fragment
+
+mol new  WT+Nb-run.pdb
+animate delete all
+mol addfile  WT+Nb-run-subset.xtc waitfor  all 
+pbc wrap -center bb -centersel "protein and chain D" -all -compound fragment
+
+
+mol new    WT-run.pdb
+animate delete all
+mol addfile    WT-run-subset.xtc waitfor  all
+pbc wrap -center bb -centersel "protein and chain D" -all -compound fragment
