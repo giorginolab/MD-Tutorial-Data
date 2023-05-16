@@ -1,0 +1,10 @@
+molinfo structure=WT+Nb-run.pdb
+all: GROUP ATOMS=1-43279
+
+zero1: PYTHONCV ATOMS=1   IMPORT=cv FUNCTION=zero
+#zeroN: PYTHONCV ATOMS=all IMPORT=cv FUNCTION=zero
+#jzero1: PYTHONCV ATOMS=1   IMPORT=cv FUNCTION=jitzero
+#jzeroN: PYTHONCV ATOMS=all IMPORT=cv FUNCTION=jitzero
+
+PRINT ARG=*
+
