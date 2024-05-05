@@ -1,0 +1,16 @@
+name: molsim
+channels:
+  - conda-forge
+dependencies:
+  - openmm
+  - numpy
+  - openmmforcefields
+  - openmmtools
+  - pdbfixer
+  - matplotlib
+  - pandas
+  - seaborn
+  - mdtraj
+  - mdanalysis
+  - deeptime
+  - pyemma
